@@ -2,31 +2,31 @@
 This project is an inventory management application designed to help users track and manage their items efficiently. 
 It provides features for adding, editing, and deleting items, along with a dashboard for quick insights into inventory status.
 ## Screenshots
-![add_item3.png](ss%2Fadd_item3.png)
-![add_item_dark.png](ss%2Fadd_item_dark.png)
-![add_item_err.png](ss%2Fadd_item_err.png)
-![addItem1.png](ss%2FaddItem1.png)
-![addItem2.png](ss%2FaddItem2.png)
-![dashboard_1.png](ss%2Fdashboard_1.png)
-![dashboard_2.png](ss%2Fdashboard_2.png)
-![dashboard_dark1.png](ss%2Fdashboard_dark1.png)
-![delete_dark.png](ss%2Fdelete_dark.png)
-![delete_item1.png](ss%2Fdelete_item1.png)
-![delete_item2.png](ss%2Fdelete_item2.png)
-![edit2.png](ss%2Fedit2.png)
-![edit3.png](ss%2Fedit3.png)
-![edit4.png](ss%2Fedit4.png)
-![edit_item.png](ss%2Fedit_item.png)
-![home_scren.png](ss%2Fhome_scren.png)
-![item_list1.png](ss%2Fitem_list1.png)
-![item_list_dark.png](ss%2Fitem_list_dark.png)
-![offline.png](ss%2Foffline.png)
-![product_detail1.png](ss%2Fproduct_detail1.png)
-![product_detail_dark.png](ss%2Fproduct_detail_dark.png)
-![report1.png](ss%2Freport1.png)
-![reports_dark.png](ss%2Freports_dark.png)
-![splash_dark.png](ss%2Fsplash_dark.png)
-![splash_light.png](ss%2Fsplash_light.png)
+<img alt="add_item3.png" src="ss%2Fadd_item3.png" width="300"/>
+<img alt="add_item_dark.png" src="ss%2Fadd_item_dark.png" width="300"/>
+<img alt="add_item_err.png" src="ss%2Fadd_item_err.png" width="300"/>
+<img alt="addItem1.png" src="ss%2FaddItem1.png" width="300"/>
+<img alt="addItem2.png" src="ss%2FaddItem2.png" width="300"/>
+<img alt="dashboard_1.png" src="ss%2Fdashboard_1.png" width="300"/>
+<img alt="dashboard_2.png" src="ss%2Fdashboard_2.png" width="300"/>
+<img alt="dashboard_dark1.png" src="ss%2Fdashboard_dark1.png" width="300"/>
+<img alt="delete_dark.png" src="ss%2Fdelete_dark.png" width="300"/>
+<img alt="delete_item1.png" src="ss%2Fdelete_item1.png" width="300"/>
+<img alt="delete_item2.png" src="ss%2Fdelete_item2.png" width="300"/>
+<img alt="edit2.png" src="ss%2Fedit2.png" width="300"/>
+<img alt="edit3.png" src="ss%2Fedit3.png" width="300"/>
+<img alt="edit4.png" src="ss%2Fedit4.png" width="300"/>
+<img alt="edit_item.png" src="ss%2Fedit_item.png" width="300"/>
+<img alt="home_scren.png" src="ss%2Fhome_scren.png" width="300"/>
+<img alt="item_list1.png" src="ss%2Fitem_list1.png" width="300"/>
+<img alt="item_list_dark.png" src="ss%2Fitem_list_dark.png" width="300"/>
+<img alt="offline.png" src="ss%2Foffline.png" width="300"/>
+<img alt="product_detail1.png" src="ss%2Fproduct_detail1.png" width="300"/>
+<img alt="product_detail_dark.png" src="ss%2Fproduct_detail_dark.png" width="300"/>
+<img alt="report1.png" src="ss%2Freport1.png" width="300"/>
+<img alt="reports_dark.png" src="ss%2Freports_dark.png" width="300"/>
+<img alt="splash_dark.png" src="ss%2Fsplash_dark.png" width="300"/>
+<img alt="splash_light.png" src="ss%2Fsplash_light.png" width="300"/>
 
 
 Features
