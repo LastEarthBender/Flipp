@@ -87,3 +87,16 @@ It provides features for adding, editing, and deleting items, along with a dashb
 </table>
 
 </details>
+
+
+## Architecture
+- MVVM (Model-View-ViewModel) Pattern: Used for separating concerns between the UI and business logic.
+
+- Hilt for Dependency Injection: Simplifies the management of dependencies across the app.
+
+- Room Persistence Library: Used for local data storage.
+
+- MPAndroidChart: Utilized for displaying visual reports.
+
+- Kotlin Coroutines: For asynchronous operations.
+
