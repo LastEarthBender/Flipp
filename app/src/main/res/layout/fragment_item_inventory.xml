@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor= "@color/md_theme_secondaryContainer"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/text_item_name"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_onSecondaryContainer"
+            app:layout_constraintEnd_toStartOf="@+id/text_item_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Product Name" />
+
+        <TextView
+            android:id="@+id/text_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_onSecondaryContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="$99.99" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/stockIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24dp"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiary"
+            app:cardCornerRadius="@dimen/_8dp"
+            app:layout_constraintStart_toStartOf="@+id/text_item_name"
+            app:layout_constraintTop_toBottomOf="@id/text_item_name"
+            >
+
+            <TextView
+                android:id="@+id/text_item_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_theme_onTertiary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/_8dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/text_item_name"
+                app:layout_constraintTop_toBottomOf="@id/text_item_name"
+                tools:text="Electronics" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/text_quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/quantity"
+            android:textColor="@color/md_theme_onSecondaryContainer"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintStart_toStartOf="@+id/stockIndicator"
+            app:layout_constraintTop_toBottomOf="@id/stockIndicator" />
+
+        <TextView
+            android:id="@+id/text_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_onPrimaryContainer"
+            app:layout_constraintStart_toEndOf="@id/text_quantity_label"
+            app:layout_constraintTop_toTopOf="@id/text_quantity_label"
+            tools:text="42" />
+
+        <TextView
+            android:id="@+id/text_updated_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/last_updated"
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_onSecondaryContainer"
+            app:layout_constraintStart_toStartOf="@+id/text_quantity_label"
+            app:layout_constraintTop_toBottomOf="@id/text_quantity_label" />
+
+        <TextView
+            android:id="@+id/text_item_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_onPrimaryContainer"
+            app:layout_constraintStart_toEndOf="@id/text_updated_label"
+            app:layout_constraintTop_toTopOf="@id/text_updated_label"
+            tools:text="2023-09-15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

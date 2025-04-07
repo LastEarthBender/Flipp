@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.flipp.presentation.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.example.flipp.presentation.itemdetail.ItemDetailFragment"
+        android:label="Product Detail">
+        <argument
+            android:name="item_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_itemDetailFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.flipp.presentation.itemslist.ItemListFragment"
+        android:label="Inventory Items">
+        <action
+            android:id="@+id/action_itemListFragment_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_itemListFragment_to_itemAddFragment"
+            app:destination="@id/itemAddFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemEditFragment"
+        android:name="com.example.flipp.presentation.itemedit.ItemEditFragment"
+        android:label="Edit Item">
+        <argument
+            android:name="item_id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="item_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="item_description"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="item_price"
+            android:defaultValue="0.0"
+            app:argType="float" />
+        <argument
+            android:name="item_category"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="supplier_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="supplier_contact"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="item_quantity"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemAddFragment"
+        android:name="com.example.flipp.presentation.itemadd.ItemAddFragment"
+        android:label="Add Item" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.flipp.presentation.reports.ReportFragment"
+        android:label="Reports" />
+</navigation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_surface"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity Trends Over Time"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/lineCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer"
+            app:cardCornerRadius="@dimen/_20dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/quantityTrendsChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="6dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Top Categories"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/pieCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer"
+            app:cardCornerRadius="@dimen/_20dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/topCategoriesChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="@dimen/_8dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Low Stock Warnings"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <TextView
+            android:id="@+id/lowStockWarningsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="70dp"
+            android:text="No low stock warnings." />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
